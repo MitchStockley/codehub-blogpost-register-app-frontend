@@ -1,0 +1,12 @@
+.read-more {
+    display: inline;
+    color: #ddd; /* Default text color */
+  }
+  
+  .read-more-toggle {
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  

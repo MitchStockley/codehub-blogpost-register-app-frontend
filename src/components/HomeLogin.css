@@ -1,0 +1,28 @@
+.home-login-content {
+    color: #333;
+    font-size: 16px;
+    padding: 1rem;
+    background-color:  #ff6b6b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 10rem auto;
+    text-align: center;
+}
+
+.home-login-content-text {
+    color: #fff;
+    background-color: #ff6b6b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.home-login-content h1 {
+    color: #000000;
+  }
+  
+ 

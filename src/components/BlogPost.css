@@ -1,0 +1,141 @@
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2c2c2c; /* Darker background color */
+  color: #f5f5f5; /* Light text color for contrast */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  overflow-x: visible;
+ 
+ 
+}
+
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-header input[type="text"],
+.post-meta input,
+textarea,
+.image-upload input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #555;
+  background-color: #444; /* Darker background color */
+  color: #eee;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.post-header input[type="text"]:focus,
+.post-meta input:focus,
+textarea:focus,
+.image-upload input[type="file"]:focus {
+  border-color: #007bff; /* Border color on focus */
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px; /* Set a minimum height */
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.image-upload {
+  margin-top: 20px;
+}
+
+.preview {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+/* Button styles */
+.comment-form button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: flex-end;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.user-icon {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  color: #ffd700; /* Golden color */
+}
+
+.star-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: twinkle 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Image container and expand text */
+.image-container {
+  position: relative;
+}
+
+.expand-text {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.expand-text:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Ensure footer positioning */
+.main-content {
+  padding-top: 150px; /* Adjust this value as needed */
+  padding-bottom: 300px; /* Adjust this value as needed */
+}
+
+body {
+  overflow-x:visible;
+}

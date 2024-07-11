@@ -1,0 +1,205 @@
+/* Container for the list of blog posts */
+.blog-post-list {
+  max-width: 600px; /* Reduced max-width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2c2c2c; /* Darker background color */
+  color: #f5f5f5; /* Light text color for contrast */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-top: 150px;
+ 
+
+}
+
+/* Container for individual blog posts */
+.blog-post-card {
+  background-color: #3a3a3a; /* Slightly lighter background for contrast */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  word-wrap: break-word; /* Ensure text wraps within the card */
+  overflow-wrap: break-word; /* Ensure text wraps within the card */
+}
+
+/* Add a hover effect to the blog post cards */
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5); /* Golden glow effect */
+}
+
+/* Title of the blog post */
+.blog-post-card h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ffd700; /* Golden color for titles */
+}
+
+/* Paragraphs within the blog post card */
+.blog-post-card p {
+  margin-bottom: 10px;
+  color: #ddd;
+  line-height: 1.5;
+  word-wrap: break-word; /* Ensure text wraps within the paragraph */
+  overflow-wrap: break-word; /* Ensure text wraps within the paragraph */
+}
+
+/* Image within the blog post card */
+.blog-post-image {
+  width: 100%; /* Make image take the full width of its container */
+  height: auto; /* Adjust height to maintain aspect ratio */
+  max-height: 300px; /* Limit the max height for large images */
+  object-fit: cover; /* Crop the image to fit the container */
+  border-radius: 4px;
+  margin-bottom: 15px; /* Add some spacing below the image */
+  cursor: pointer; /* Indicate that the image is clickable */
+}
+
+/* Formatting the creation date of the blog post */
+.post-createdAt {
+  font-size: 0.85em;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+/* Comments container */
+.comments {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  background-color: #454545;
+  border-radius: 8px;
+  padding: 15px;
+  
+}
+
+/* Individual comment */
+.comment {
+  margin-bottom: 10px;
+  color: #ccc;
+  padding: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word; /* Ensure text wraps within the comment */
+  overflow-wrap: break-word; /* Ensure text wraps within the comment */
+ 
+}
+
+/* Comment form */
+.comment-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+}
+
+/* Input fields within the comment form */
+.comment-form input,
+.comment-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #eee;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+  
+}
+
+/* Submit button within the comment form */
+.comment-form button {
+  padding: 8px 16px; /* Smaller padding */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: flex-end; /* Align the button to the right */
+  margin-top: 0%;
+}
+
+/* Add a hover effect to the submit button */
+.comment-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* User icon */
+.user-icon {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  color: #ffd700; /* Golden color for the icon */
+}
+
+/* Adding star background for aesthetic effect */
+.star-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Make stars unclickable */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: twinkle 1.5s infinite ease-in-out alternate;
+}
+
+/* Star twinkling animation */
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.image-container {
+  position: relative;
+}
+
+.expand-text {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.expand-text:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Add this to your CSS file */
+.restricted-comment-form {
+  text-align: center;
+  color: #bbb;
+  padding: 20px;
+  border: 1px solid #444;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+}
+
+.body{
+  background-color: black;
+}
